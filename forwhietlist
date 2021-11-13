@@ -1,0 +1,362 @@
+--KindaWare
+-- locals
+game:GetService("RunService").RenderStepped:Connect(function()
+        if game.Players.LocalPlayer.Character.Humanoid.Health == 0 and getgenv().godmode then
+            local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+            game.Workspace.Remote.loadchar:InvokeServer(game.Players.LocalPlayer.Name)  
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pos)
+        end
+        if getgenv().noclip then
+            if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+                game.Players.LocalPlayer.Character:FindFirstChild("Humanoid"):ChangeState(11)
+            end
+        end
+        end)
+--end of locals
+--Execute Notification
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "KindaWare";
+    Text = "Thank you for using KindaWare";
+ })
+
+--Colors
+local colors = {
+    SchemeColor = Color3.fromRGB(230, 35, 69),
+    Background = Color3.fromRGB(48, 48, 48),
+    Header = Color3.fromRGB(24, 24, 24),
+    TextColor = Color3.fromRGB(255,255,255),
+    ElementColor = Color3.fromRGB(32, 32, 32)
+}
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("KindaWare", colors)
+
+
+--Scripts
+local Scripts = Window:NewTab("</>")
+local Scripts = Scripts:NewSection("Scripts")
+
+--Game Scripts
+local GameScripts = Window:NewTab("GameScripts")
+local GameScripts = GameScripts:NewSection("GameScripts")
+--Synapse Scripts
+local SynapseScripts = Window:NewTab("SynapseScripts")
+local SynapseScripts = SynapseScripts:NewSection("SynapseScripts")
+
+--Script-Ware Scripts
+local SwScripts = Window:NewTab("Script-Ware Scripts")
+local SwScripts = SwScripts:NewSection("Script-Ware Scripts")
+
+--Universal
+local Universal = Window:NewTab("Universal")
+local Universal = Universal:NewSection("Universal")
+
+--Credits
+local Credits = Window:NewTab("Credits")
+local Credits = Credits:NewSection("Credits:")
+Credits:NewLabel("Kindamania And Emplic")
+
+Credits:NewButton("Website", "Copy The Website", function()
+    local websiteWare = "https://sites.google.com/view/kindaware/home"
+    setclipboard (websiteWare)
+end)
+
+Credits:NewButton("Discord", "Copy The Discord", function()
+    local KindaWareDiscord = "https://discord.gg/eX386Nfj54"
+    setclipboard (KindaWareDiscord)
+end)
+
+--Ok lets start
+
+--Glitcher
+Scripts:NewButton("Bruh's Glitcher", "Cmds, .R6 .glitcher ", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SampleSacred/projectxnew/main/ProjectXV1_3.lua",true))()
+    
+end)
+-- fe bike script by Emplic
+Scripts:NewButton("FE bike script", "by Emplic", function()
+    -- hat for script https://www.roblox.com/catalog/5063566353/Atomic-Prussian-Bike
+-- Made by Emplic
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Emplic/FEbike/main/MadeByEmplic!"))()
+    
+end)
+
+--New Glitcher
+Scripts:NewButton("Pigeon Glitcher", "Swag", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1mania/GrapeHub/main/Pigeon",true))()
+    
+end)
+
+--ball
+
+Scripts:NewButton("Fe Ball", "Roll around lol", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/1mania/Test-1/main/balsls'),true))()
+    
+end)
+
+
+--Pumpkin Hub
+Scripts:NewButton("PumpkinHub", "Cool Fe Hub made by Aw.#4708", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1mania/UnofficialPumpkinHub/main/NewerPumpkinHub",true))()
+    
+end)
+
+
+--UTG
+Scripts:NewButton("UTG", "Cool UTG", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukez/Scripts/main/UTG%20V3%20RAW",true))()
+    
+end)
+
+
+--Syntax
+Scripts:NewButton("Syntax", "Key: Syntaxbesthub", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Vallater/SyntaxFE/main/README.txt'),true))()
+    
+end)
+
+
+Scripts:NewButton("Chips", "Original", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/1mania/Test-1/main/spihC"))()
+end)
+
+Scripts:NewButton("R15 Chips", "R15 Version", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/jbGhcwpa"))()
+end)
+
+Scripts:NewButton("Chill", "You Have Asecnded", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/XmHFdTij"))()
+end)
+
+Scripts:NewButton("Drone", "Cmds, T, B, ", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1mania/Test-1/main/enorD",true))()
+    
+end)
+
+Scripts:NewButton("Among Us", "Fun Fe Script", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/1mania/Test-1/main/sU%20gnomA"))()
+end)
+
+Scripts:NewButton("Black Hole", "Powerful Script", function()
+    
+    loadstring(game:HttpGet("https://pastebin.com/raw/t2ib971A",true))()
+    
+end)
+
+--GameScripts
+
+--Chill Hub
+GameScripts:NewButton("Chill Hub", "(Vibe Hugs) Made By Emplic", function()
+    _G.Key = "bruhleft"
+loadstring(game:HttpGet('https://selimwhatxd.000webhostapp.com/bruhbruhbruh'))()
+    
+end)
+
+--Prison life
+GameScripts:NewButton("Prison life", "(Prison life) Made By Emplic", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChillSoftworks/ChillHub/main/PrisonLife"))()
+    
+end)
+-- brookhaven take house gui
+GameScripts:NewButton("Brookhaven control house gui", "(BrookhavenRP) Made By Emplic", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChillSoftworks/Houseg/main/Housegui"))()
+end)
+GameScripts:NewButton("Tower of hell", "(TowerOfHell) Made By Emplic", function()
+         --[[
+chill softworks
+     discord for updates: https://discord.gg/vXfTJCfFWM
+      https://www.roblox.com/games/1962086868/Tower-of-Hell
+                --]] 
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/plugss/TowerOfHell/main/Chill%20SoftWorks%20README.md'),true))()
+end)
+GameScripts:NewButton("Whack People (WEAPONS)", "(Whackpeoplewithweapons) By Emplic", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/offperms/how-to-die-/main/not%20the%20wack%20people%20script%20oh%20no"))()
+
+-- game https://www.roblox.com/games/6127791676/whack-people-WEAPONS
+end)
+-- brookhaven candy corns
+GameScripts:NewButton("brookhaven get all candycorns", "(BrookhavenRP) Made By Emplic", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/plugss/brookhavenrp/main/getallcandycorns"))()
+end)
+
+
+--Phantom Hub
+
+GameScripts:NewButton("Phantom Hub", "A Universal Time", function()
+    
+    local discordinv = "https://discord.gg/phantomhub"
+local d
+local f = pcall(function()
+    d = loadstring(game:HttpGet("https://raw.githubusercontent.com/Forgxtten/Phantom-Hub/main/Main-Loader/Hub.lua"))()
+end)
+if f == true then
+    loadstring(d)()
+else
+    game.Players.LocalPlayer:Kick("Game Not Supported Or Patched Join Discord Server For The Updates! Invite link Is Copied To Clipboard. "..discordinv)
+    setclipboard(discordinv)
+
+end
+
+end)
+
+--Cyrus
+
+GameScripts:NewButton("Cyrus", "Script for the streets", function()
+    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Cyrus/Streets-Script/master/Streets%20Admin.lua",true))()
+    
+end)
+
+--Owl Hub
+
+GameScripts:NewButton("Owl Hub", "Games on website", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+        
+    end)
+        
+      GameScripts:NewButton("Natural Disaster", "No Fall Damage", function()
+
+        game.Players.LocalPlayer.Character.FallDamageScript:Destroy()
+            
+        end)  
+
+    GameScripts:NewButton("Breaking Point", "Great Script For Breaking Point", function()
+
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/1mania/Test-1/main/ginkaerB", true))()
+            
+        end)
+
+
+--Synapse Scripts
+
+--Dex
+SynapseScripts:NewButton("Dark Dex", "Dex V4", function()
+
+   loadstring(game:HttpGetAsync("https://pastebin.com/raw/fPP8bZ8Z"))()
+        
+    end)
+
+    --Unnamed ESP
+
+    SynapseScripts:NewButton("Unnamed ESP", "Cool Esp", function()
+
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/1mania/Test-1/main/spe", true))()
+            
+        end)
+    
+        --RemoteSpy
+
+        SynapseScripts:NewButton("SimpleSpy", "Great Remote Spy", function()
+
+            loadstring(game:HttpGet("https://pastebin.com/raw/JfXaL0RK", true))()
+                
+            end)
+
+    --Stream Sniper
+
+    SynapseScripts:NewButton("Stream Sniper", "Synapse Stream Sniper", function()
+
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/StreamSniper.lua"))()
+            
+    end)
+    SynapseScripts:NewButton("Chat Hax", "fechathax", function()
+    -- chat hax
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/offperms/chathex/main/pog"))()
+            
+        end)
+
+
+        --Script-Ware Scripts
+
+        --IY
+        SwScripts:NewButton("Infinite Yield", "Great Admin", function()
+
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+                
+            end)
+
+            --mattts UI
+            SwScripts:NewButton("Arsenal Autokill", "autokill", function()
+
+                game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(k)
+                    if k == "e" then
+                    local Gun = game.ReplicatedStorage.Weapons:FindFirstChild(game.Players.LocalPlayer.NRPBS.EquippedTool.Value);
+                    local Crit = math.random() > .6 and true or false;
+                    for i,v in pairs(game.Players:GetPlayers()) do
+                    if v and v.Character and v.Character:FindFirstChild("Head") then
+                    local Distance = (game.Players.LocalPlayer.Character.Head.Position - v.Character.Head.Position).magnitude
+                    for i  = 1,10 do
+                    game.ReplicatedStorage.Events.HitPart:FireServer(v.Character.Head,
+                    v.Character.Head.Position + Vector3.new(math.random(), math.random(), math.random()),
+                    Gun.Name,
+                    Crit and 2 or 1,
+                    Distance,
+                    Backstab,
+                    Crit,
+                    false,
+                    1,
+                    false,
+                    Gun.FireRate.Value,
+                    Gun.ReloadTime.Value,
+                    Gun.Ammo.Value,
+                    Gun.StoredAmmo.Value,
+                    Gun.Bullets.Value,
+                    Gun.EquipTime.Value,
+                    Gun.RecoilControl.Value,
+                    Gun.Auto.Value,
+                    Gun['Speed%'].Value,
+                    game.ReplicatedStorage.wkspc.DistributedTime.Value);
+                    end
+                    end
+                    end
+                    end
+                    end)
+                    
+                end)
+
+                --Script Analyser
+                SwScripts:NewButton("Script Analyser", "Analyze Scripts", function()
+
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/debug420/rbx-script-analyzer/main/Script-Analyzer.lua"))()
+                        
+                    end)
+
+
+                    --OrHub
+                    SwScripts:NewButton("OrHub", "Allows for amazing FE dances and animations across any game.", function()
+
+                        loadstring(game:HttpGet("https://pastebin.com/raw/khS8BvvK"))()
+                            
+                        end)
+
+
+                        --Dex V4
+                        SwScripts:NewButton("Dex", "Sadly i cant find it", function()
+
+                            loadstring(game:HttpGetAsync("https://pastebin.com/raw/fPP8bZ8Z"))()
+                                
+                            end)
+
+
+                            
+                                SwScripts:NewButton("Solaris Hub", "Amazing Script", function()
+    
+                                    loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+                                    
+                                end)
+-- Universal
+Universal:NewSlider("Walkspeed", "Changes your walkspeed magnitude.", 250, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+Universal:NewSlider("JumpPower", "Changes your JumpPower magnitude.", 250, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+Universal:NewToggle("Noclip", "Noclips the localplayer.", function(state)
+getgenv().noclip = state
+end)
+Universal:NewToggle("Godmode", "Auto respawns", function(state)
+getgenv().godmode = state
+end)
